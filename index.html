@@ -615,9 +615,10 @@
   }
 
   .nav-mobile {
+    display: flex;
+    flex-direction: column;
     max-height: 0;
     overflow: hidden;
-    flex-direction: column;
     background: rgba(10,10,10,0.98);
     border-top: 1px solid #222;
     position: fixed;
@@ -625,12 +626,12 @@
     left: 0;
     right: 0;
     z-index: 9999;
-    transition: max-height 0.3s ease;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 20px;
   }
 
   .nav-mobile.open {
     max-height: 400px;
-    display: flex;
     padding: 16px 20px;
   }
 
