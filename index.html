@@ -971,6 +971,15 @@
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('hamburger');
+    if (btn) {
+      btn.addEventListener('click', function() {
+        document.getElementById('navMobile').classList.toggle('open');
+      });
+    }
+  });
+
   function toggleMenu() {
     document.getElementById('navMobile').classList.toggle('open');
   }
